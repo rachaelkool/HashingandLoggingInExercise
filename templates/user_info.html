@@ -36,7 +36,9 @@
        
         <div class="d-inline">
           <a href="/feedback/{{feedback.id}}/update" class="btn btn-success btn-sm">Edit</a>
-          <a method="POST" href="/feedback/{{ feedback.id }}/delete" class="btn btn-danger btn-sm">Delete</a>
+          <form action="/feedback/{{ feedback.id }}/delete" method="POST">
+            <button class="btn btn-danger btn-sm">Delete</button>
+          </form>
         </div>
       
         
